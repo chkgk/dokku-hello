@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Marks an app as manually stopped
+
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+
+APP="$1";
+
+echo "$APP was stopped. Hell yeah!"
